@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ quiz.title }}: Question {{ question_index }} of {{ total_questions }}</h2>
+  <form action="{% url 'quiz_app:submit_answer' quiz.id question.id %}" method="post">
+    {% csrf_token %}
+    <p>{{ question.text }}</p>
+    <div>
+      <input type="radio" id="option_one" name="answer" value="{{ question.option_one }}">
+      <label for="option_one">{{ question.option_one }}</label><br>
+      <input type="radio" id="option_two" name="answer" value="{{ question.option_two }}">
+      <label for="option_two">{{ question.option_two }}</label><br>
+      <input type="radio" id="option_three" name="answer" value="{{ question.option_three }}">
+      <label for="option_three">{{ question.option_three }}</label><br>
+      <input type="radio" id="option_four" name="answer" value="{{ question.option_four }}">
+      <label for="option_four">{{ question.option_four }}</label><br>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
