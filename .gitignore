@@ -2,11 +2,11 @@
 .env
 venv/
 .venv/
+__pycache__/
+*.pyc
 
 # Frontend
-
 node_modules/
 
 # MacOS
-
 .DS_Store
