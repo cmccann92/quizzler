@@ -1,0 +1,12 @@
+# Backend
+.env
+venv/
+.venv/
+
+# Frontend
+
+node_modules/
+
+# MacOS
+
+.DS_Store
