@@ -4,3 +4,7 @@ psycopg2-binary==2.9.9
 python-dotenv==1.0.0
 sqlparse==0.4.4
 typing_extensions==4.8.0
+django-allauth==0.54.0
+djangorestframework==3.14.0
+dj-rest-auth==4.0.1
+drf-spectacular==0.26.4
